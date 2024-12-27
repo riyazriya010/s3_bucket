@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+    <h1>Video Player</h1>
+    <div>
+        <h2><%= video.description %></h2>
+        <video width="640" height="360" controls poster="<%= video.thumbnail %>">
+            <source src="<%= video.media[0].url %>" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Likes: <%= video.likeCount %></p>
+        <p>Comments: <%= video.commentCount %></p>
+    </div>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<body>
+    <h1>Video Player</h1>
+    <div>
+        <h2><%= video.description %></h2>
+        <video width="640" height="360" controls poster="<%= video.media[0].thumbnailUrl %>">
+            <source src="<%= video.media[0].url %>" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Likes: <%= video.likeCount %></p>
+        <p>Comments: <%= video.commentCount %></p>
+    </div>
+</body>
+</html> -->
